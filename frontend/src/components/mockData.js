@@ -95,20 +95,6 @@ export const weddingData = {
   rsvp: {
     responses: []
   },
-  gifts: [
-    {
-      id: 1,
-      name: "Lista prezentów ślubnych",
-      description: "Dziękujemy za wszystkie prezenty! Jeśli chcielibyście sprawić nam radość, mamy przygotowaną listę upominków.",
-      registryLink: "https://example-registry.com"
-    },
-    {
-      id: 2,
-      name: "Wpłata na podróż poślubną",
-      description: "Zamiast fizycznych prezentów, będziemy wdzięczni za wsparcie naszej podróży poślubnej.",
-      accountNumber: "PL12 3456 7890 1234 5678 9012 3456"
-    }
-  ],
   faqs: [
     {
       id: 1,
