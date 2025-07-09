@@ -655,7 +655,7 @@ const WeddingWebsite = () => {
       <footer className="bg-gray-800 text-white py-12">
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center space-x-2 mb-6">
-            <Heart className="h-8 w-8 text-rose-600" />
+            <HeartIcon />
             <h3 className="text-2xl font-bold">
               {weddingData.couple.bride} & {weddingData.couple.groom}
             </h3>
@@ -663,7 +663,7 @@ const WeddingWebsite = () => {
           <p className="text-gray-400 mb-4">
             {formatDate(weddingData.couple.weddingDate)}
           </p>
-          <Separator className="my-6 bg-gray-700" />
+          <div className="border-t border-gray-700 my-6" />
           <p className="text-gray-400">
             Wykonano z ❤️ na nasze wesele
           </p>
