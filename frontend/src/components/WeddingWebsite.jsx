@@ -257,7 +257,7 @@ const WeddingWebsite = () => {
                   {weddingData.story.content}
                 </p>
                 <div className="flex justify-center">
-                  <Heart className="h-8 w-8 text-rose-600 animate-pulse" />
+                  <HeartIcon />
                 </div>
               </div>
               <div className="relative">
