@@ -349,16 +349,14 @@ const WeddingWebsite = () => {
                     <span className="text-white font-bold text-lg">{item.time}</span>
                   </div>
                   <div className="flex-grow">
-                    <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
-                      <CardContent className="p-6">
-                        <h3 className="text-xl font-bold text-gray-800 mb-2">{item.event}</h3>
-                        <p className="text-gray-600 mb-2">{item.description}</p>
-                        <div className="flex items-center space-x-2 text-gray-500">
-                          <MapPin className="h-4 w-4" />
-                          <span className="text-sm">{item.location}</span>
-                        </div>
-                      </CardContent>
-                    </Card>
+                    <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                      <h3 className="text-xl font-bold text-gray-800 mb-2">{item.event}</h3>
+                      <p className="text-gray-600 mb-2">{item.description}</p>
+                      <div className="flex items-center space-x-2 text-gray-500">
+                        <MapPinIcon />
+                        <span className="text-sm">{item.location}</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               ))}
