@@ -124,14 +124,14 @@ export const weddingData = {
   ],
   contact: {
     bride: {
-      name: "Anna",
+      name: "Natalia",
       phone: "+48 123 456 789",
-      email: "anna@example.com"
+      email: "natalia@example.com"
     },
     groom: {
-      name: "Marek",
+      name: "Adam",
       phone: "+48 987 654 321", 
-      email: "marek@example.com"
+      email: "adam@example.com"
     }
   }
 };
