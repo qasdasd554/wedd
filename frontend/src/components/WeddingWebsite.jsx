@@ -283,54 +283,54 @@ const WeddingWebsite = () => {
           </h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {/* Ceremony Card */}
-            <Card className="shadow-xl border-0 bg-white hover:shadow-2xl transition-shadow duration-300">
-              <CardHeader className="bg-gradient-to-r from-rose-600 to-pink-600 text-white">
-                <CardTitle className="text-2xl flex items-center space-x-2">
-                  <Heart className="h-6 w-6" />
+            <div className="bg-white shadow-xl rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+              <div className="bg-gradient-to-r from-rose-600 to-pink-600 text-white p-6">
+                <h3 className="text-2xl font-bold flex items-center space-x-2">
+                  <HeartIcon />
                   <span>Ceremonia Ślubna</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="p-6">
+                </h3>
+              </div>
+              <div className="p-6">
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
-                    <Clock className="h-5 w-5 text-rose-600" />
+                    <ClockIcon />
                     <span className="text-gray-700">{weddingData.couple.venue.ceremony.time}</span>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <MapPin className="h-5 w-5 text-rose-600 mt-1" />
+                    <MapPinIcon />
                     <div>
                       <p className="font-semibold text-gray-800">{weddingData.couple.venue.ceremony.name}</p>
                       <p className="text-gray-600">{weddingData.couple.venue.ceremony.address}</p>
                     </div>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* Reception Card */}
-            <Card className="shadow-xl border-0 bg-white hover:shadow-2xl transition-shadow duration-300">
-              <CardHeader className="bg-gradient-to-r from-pink-600 to-rose-600 text-white">
-                <CardTitle className="text-2xl flex items-center space-x-2">
-                  <Users className="h-6 w-6" />
+            <div className="bg-white shadow-xl rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+              <div className="bg-gradient-to-r from-pink-600 to-rose-600 text-white p-6">
+                <h3 className="text-2xl font-bold flex items-center space-x-2">
+                  <UsersIcon />
                   <span>Przyjęcie Weselne</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="p-6">
+                </h3>
+              </div>
+              <div className="p-6">
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
-                    <Clock className="h-5 w-5 text-pink-600" />
+                    <ClockIcon />
                     <span className="text-gray-700">{weddingData.couple.venue.reception.time}</span>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <MapPin className="h-5 w-5 text-pink-600 mt-1" />
+                    <MapPinIcon />
                     <div>
                       <p className="font-semibold text-gray-800">{weddingData.couple.venue.reception.name}</p>
                       <p className="text-gray-600">{weddingData.couple.venue.reception.address}</p>
                     </div>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
         </div>
       </section>
