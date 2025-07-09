@@ -267,7 +267,7 @@ const WeddingWebsite = () => {
                   className="rounded-lg shadow-2xl w-full h-96 object-cover"
                 />
                 <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-rose-100 rounded-full flex items-center justify-center">
-                  <Heart className="h-12 w-12 text-rose-600" />
+                  <HeartIcon />
                 </div>
               </div>
             </div>
