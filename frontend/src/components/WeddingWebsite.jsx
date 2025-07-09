@@ -437,44 +437,6 @@ const WeddingWebsite = () => {
         </div>
       </section>
 
-      {/* Gifts Section */}
-      <section id="gifts" className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-12">
-            Lista Prezentów
-          </h2>
-          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-            {weddingData.gifts.map((gift) => (
-              <div key={gift.id} className="bg-white shadow-xl rounded-lg overflow-hidden border-0 hover:shadow-2xl transition-shadow duration-300">
-                <div className="bg-gradient-to-r from-rose-600 to-pink-600 text-white p-6">
-                  <h3 className="text-xl font-bold flex items-center space-x-2">
-                    <GiftIcon />
-                    <span>{gift.name}</span>
-                  </h3>
-                </div>
-                <div className="p-6">
-                  <p className="text-gray-600 mb-4">{gift.description}</p>
-                  {gift.registryLink && (
-                    <button 
-                      onClick={() => window.open(gift.registryLink, '_blank')}
-                      className="w-full bg-rose-600 hover:bg-rose-700 text-white py-2 px-4 rounded-lg transition-colors duration-300"
-                    >
-                      Zobacz Listę Prezentów
-                    </button>
-                  )}
-                  {gift.accountNumber && (
-                    <div className="bg-gray-100 p-4 rounded-lg">
-                      <p className="text-sm text-gray-600 mb-2">Numer konta:</p>
-                      <p className="font-mono text-sm text-gray-800">{gift.accountNumber}</p>
-                    </div>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* FAQ Section */}
       <section id="faq" className="py-20 bg-white">
         <div className="container mx-auto px-4">
