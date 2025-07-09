@@ -395,22 +395,22 @@ const WeddingWebsite = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-12">
               Potwierdzenie Obecności
             </h2>
-            <Card className="shadow-xl border-0">
-              <CardHeader className="bg-gradient-to-r from-rose-600 to-pink-600 text-white">
-                <CardTitle className="text-2xl text-center">Proszę potwierdź swoją obecność</CardTitle>
-              </CardHeader>
-              <CardContent className="p-8">
+            <div className="bg-white shadow-xl rounded-lg overflow-hidden border-0">
+              <div className="bg-gradient-to-r from-rose-600 to-pink-600 text-white p-6">
+                <h3 className="text-2xl font-bold text-center">Proszę potwierdź swoją obecność</h3>
+              </div>
+              <div className="p-8">
                 <form onSubmit={handleRSVPSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">
                         Imię i Nazwisko *
                       </label>
-                      <Input
+                      <input
                         type="text"
                         value={rsvpData.name}
                         onChange={(e) => setRsvpData({...rsvpData, name: e.target.value})}
-                        className="w-full"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
                         required
                       />
                     </div>
@@ -418,11 +418,11 @@ const WeddingWebsite = () => {
                       <label className="block text-sm font-medium text-gray-700 mb-2">
                         Email *
                       </label>
-                      <Input
+                      <input
                         type="email"
                         value={rsvpData.email}
                         onChange={(e) => setRsvpData({...rsvpData, email: e.target.value})}
-                        className="w-full"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
                         required
                       />
                     </div>
@@ -432,11 +432,11 @@ const WeddingWebsite = () => {
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Numer telefonu
                     </label>
-                    <Input
+                    <input
                       type="tel"
                       value={rsvpData.phone}
                       onChange={(e) => setRsvpData({...rsvpData, phone: e.target.value})}
-                      className="w-full"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
                     />
                   </div>
                   
@@ -476,13 +476,13 @@ const WeddingWebsite = () => {
                         <label className="block text-sm font-medium text-gray-700 mb-2">
                           Liczba osób
                         </label>
-                        <Input
+                        <input
                           type="number"
                           min="1"
                           max="4"
                           value={rsvpData.guestCount}
                           onChange={(e) => setRsvpData({...rsvpData, guestCount: parseInt(e.target.value)})}
-                          className="w-full"
+                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
                         />
                       </div>
                       
@@ -490,10 +490,11 @@ const WeddingWebsite = () => {
                         <label className="block text-sm font-medium text-gray-700 mb-2">
                           Ograniczenia dietetyczne
                         </label>
-                        <Textarea
+                        <textarea
                           value={rsvpData.dietaryRestrictions}
                           onChange={(e) => setRsvpData({...rsvpData, dietaryRestrictions: e.target.value})}
-                          className="w-full"
+                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
+                          rows="3"
                           placeholder="Proszę opisz ewentualne ograniczenia dietetyczne..."
                         />
                       </div>
@@ -504,23 +505,24 @@ const WeddingWebsite = () => {
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Wiadomość dla pary młodej
                     </label>
-                    <Textarea
+                    <textarea
                       value={rsvpData.message}
                       onChange={(e) => setRsvpData({...rsvpData, message: e.target.value})}
-                      className="w-full"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
+                      rows="3"
                       placeholder="Twoje życzenia i komentarze..."
                     />
                   </div>
                   
-                  <Button 
+                  <button 
                     type="submit" 
                     className="w-full bg-rose-600 hover:bg-rose-700 text-white py-3 text-lg rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300"
                   >
                     Wyślij Potwierdzenie
-                  </Button>
+                  </button>
                 </form>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
         </div>
       </section>
