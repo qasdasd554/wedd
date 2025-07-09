@@ -26,37 +26,37 @@ export const weddingData = {
     {
       time: "15:00",
       event: "Ceremonia ślubna",
-      location: "Kościół św. Jakuba",
+      location: "Parafia Rzymskokatolicka p.w. Św. Stanisława Biskupa i Męczennika",
       description: "Uroczystość zaślubin"
     },
     {
       time: "16:00",
       event: "Sesja zdjęciowa",
-      location: "Park Łazienkowski",
+      location: "Okolice pałacu",
       description: "Zdjęcia z młodą parą"
     },
     {
       time: "17:00",
       event: "Powitanie gości",
-      location: "Sala Weselna Róża",
+      location: "Pałac Weselny",
       description: "Koktajl powitalny"
     },
     {
       time: "18:00",
       event: "Obiad weselny",
-      location: "Sala Weselna Róża",
+      location: "Pałac Weselny",
       description: "Uroczysta kolacja"
     },
     {
       time: "20:00",
       event: "Pierwszy taniec",
-      location: "Sala Weselna Róża",
+      location: "Pałac Weselny",
       description: "Romantyczny taniec młodej pary"
     },
     {
       time: "21:00",
       event: "Zabawa taneczna",
-      location: "Sala Weselna Róża",
+      location: "Pałac Weselny",
       description: "Tańce i rozrywka do późnych godzin"
     }
   ],
