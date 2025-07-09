@@ -595,58 +595,58 @@ const WeddingWebsite = () => {
           </h2>
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
             {/* Bride Contact */}
-            <Card className="shadow-xl border-0 hover:shadow-2xl transition-shadow duration-300">
-              <CardHeader className="bg-gradient-to-r from-rose-600 to-pink-600 text-white">
-                <CardTitle className="text-2xl flex items-center space-x-2">
-                  <Heart className="h-6 w-6" />
+            <div className="bg-white shadow-xl rounded-lg overflow-hidden border-0 hover:shadow-2xl transition-shadow duration-300">
+              <div className="bg-gradient-to-r from-rose-600 to-pink-600 text-white p-6">
+                <h3 className="text-2xl font-bold flex items-center space-x-2">
+                  <HeartIcon />
                   <span>Panna Młoda</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="p-6">
+                </h3>
+              </div>
+              <div className="p-6">
                 <div className="space-y-4">
                   <h3 className="text-xl font-semibold text-gray-800">{weddingData.contact.bride.name}</h3>
                   <div className="flex items-center space-x-3">
-                    <Phone className="h-5 w-5 text-rose-600" />
+                    <PhoneIcon />
                     <a href={`tel:${weddingData.contact.bride.phone}`} className="text-gray-700 hover:text-rose-600 transition-colors">
                       {weddingData.contact.bride.phone}
                     </a>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Mail className="h-5 w-5 text-rose-600" />
+                    <MailIcon />
                     <a href={`mailto:${weddingData.contact.bride.email}`} className="text-gray-700 hover:text-rose-600 transition-colors">
                       {weddingData.contact.bride.email}
                     </a>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* Groom Contact */}
-            <Card className="shadow-xl border-0 hover:shadow-2xl transition-shadow duration-300">
-              <CardHeader className="bg-gradient-to-r from-pink-600 to-rose-600 text-white">
-                <CardTitle className="text-2xl flex items-center space-x-2">
-                  <Heart className="h-6 w-6" />
+            <div className="bg-white shadow-xl rounded-lg overflow-hidden border-0 hover:shadow-2xl transition-shadow duration-300">
+              <div className="bg-gradient-to-r from-pink-600 to-rose-600 text-white p-6">
+                <h3 className="text-2xl font-bold flex items-center space-x-2">
+                  <HeartIcon />
                   <span>Pan Młody</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="p-6">
+                </h3>
+              </div>
+              <div className="p-6">
                 <div className="space-y-4">
                   <h3 className="text-xl font-semibold text-gray-800">{weddingData.contact.groom.name}</h3>
                   <div className="flex items-center space-x-3">
-                    <Phone className="h-5 w-5 text-pink-600" />
+                    <PhoneIcon />
                     <a href={`tel:${weddingData.contact.groom.phone}`} className="text-gray-700 hover:text-pink-600 transition-colors">
                       {weddingData.contact.groom.phone}
                     </a>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Mail className="h-5 w-5 text-pink-600" />
+                    <MailIcon />
                     <a href={`mailto:${weddingData.contact.groom.email}`} className="text-gray-700 hover:text-pink-600 transition-colors">
                       {weddingData.contact.groom.email}
                     </a>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
         </div>
       </section>
