@@ -380,7 +380,7 @@ const WeddingWebsite = () => {
                   className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300 flex items-center justify-center">
-                  <Camera className="h-8 w-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <CameraIcon />
                 </div>
               </div>
             ))}
