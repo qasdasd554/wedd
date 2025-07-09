@@ -1,19 +1,19 @@
 // Mock data for the wedding website
 export const weddingData = {
   couple: {
-    bride: "Anna",
-    groom: "Marek",
+    bride: "Natalia",
+    groom: "Adam",
     weddingDate: "04.09.2027",
     weddingTime: "15:00",
     venue: {
       ceremony: {
-        name: "Kościół św. Jakuba",
-        address: "ul. Główna 12, 00-123 Warszawa",
+        name: "Parafia Rzymskokatolicka p.w. Św. Stanisława Biskupa i Męczennika",
+        address: "05-430 Ostrów",
         time: "15:00"
       },
       reception: {
-        name: "Sala Weselna Róża",
-        address: "ul. Weselna 45, 00-456 Warszawa", 
+        name: "Pałac Weselny",
+        address: "Pałacowa 4, 05-332 Nowa Pogorzel", 
         time: "17:00"
       }
     }
