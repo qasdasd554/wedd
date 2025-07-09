@@ -223,17 +223,17 @@ const WeddingWebsite = () => {
               {formatDate(weddingData.couple.weddingDate)}
             </p>
             <div className="flex items-center justify-center space-x-4 mb-8">
-              <Calendar className="h-6 w-6" />
+              <CalendarIcon />
               <span className="text-xl">{weddingData.couple.weddingDate}</span>
-              <Clock className="h-6 w-6 ml-8" />
+              <ClockIcon />
               <span className="text-xl">{weddingData.couple.weddingTime}</span>
             </div>
-            <Button 
+            <button 
               onClick={() => scrollToSection('rsvp')}
               className="bg-rose-600 hover:bg-rose-700 text-white px-8 py-4 text-lg rounded-full shadow-lg transform hover:scale-105 transition-all duration-300"
             >
               Potwierdź Obecność
-            </Button>
+            </button>
           </div>
         </div>
         
