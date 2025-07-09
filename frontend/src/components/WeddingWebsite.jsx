@@ -535,22 +535,22 @@ const WeddingWebsite = () => {
           </h2>
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
             {weddingData.gifts.map((gift) => (
-              <Card key={gift.id} className="shadow-xl border-0 hover:shadow-2xl transition-shadow duration-300">
-                <CardHeader className="bg-gradient-to-r from-rose-600 to-pink-600 text-white">
-                  <CardTitle className="text-xl flex items-center space-x-2">
-                    <Gift className="h-6 w-6" />
+              <div key={gift.id} className="bg-white shadow-xl rounded-lg overflow-hidden border-0 hover:shadow-2xl transition-shadow duration-300">
+                <div className="bg-gradient-to-r from-rose-600 to-pink-600 text-white p-6">
+                  <h3 className="text-xl font-bold flex items-center space-x-2">
+                    <GiftIcon />
                     <span>{gift.name}</span>
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="p-6">
+                  </h3>
+                </div>
+                <div className="p-6">
                   <p className="text-gray-600 mb-4">{gift.description}</p>
                   {gift.registryLink && (
-                    <Button 
+                    <button 
                       onClick={() => window.open(gift.registryLink, '_blank')}
-                      className="w-full bg-rose-600 hover:bg-rose-700 text-white"
+                      className="w-full bg-rose-600 hover:bg-rose-700 text-white py-2 px-4 rounded-lg transition-colors duration-300"
                     >
                       Zobacz Listę Prezentów
-                    </Button>
+                    </button>
                   )}
                   {gift.accountNumber && (
                     <div className="bg-gray-100 p-4 rounded-lg">
@@ -558,8 +558,8 @@ const WeddingWebsite = () => {
                       <p className="font-mono text-sm text-gray-800">{gift.accountNumber}</p>
                     </div>
                   )}
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             ))}
           </div>
         </div>
