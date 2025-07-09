@@ -573,17 +573,15 @@ const WeddingWebsite = () => {
           </h2>
           <div className="max-w-4xl mx-auto space-y-6">
             {weddingData.faqs.map((faq) => (
-              <Card key={faq.id} className="shadow-lg border-0 hover:shadow-xl transition-shadow duration-300">
-                <CardContent className="p-6">
-                  <div className="flex items-start space-x-3">
-                    <MessageCircle className="h-6 w-6 text-rose-600 mt-1 flex-shrink-0" />
-                    <div>
-                      <h3 className="text-lg font-semibold text-gray-800 mb-2">{faq.question}</h3>
-                      <p className="text-gray-600">{faq.answer}</p>
-                    </div>
+              <div key={faq.id} className="bg-white shadow-lg rounded-lg p-6 border-0 hover:shadow-xl transition-shadow duration-300">
+                <div className="flex items-start space-x-3">
+                  <MessageIcon />
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-800 mb-2">{faq.question}</h3>
+                    <p className="text-gray-600">{faq.answer}</p>
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             ))}
           </div>
         </div>
