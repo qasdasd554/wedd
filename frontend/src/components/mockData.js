@@ -20,7 +20,7 @@ export const weddingData = {
   },
   story: {
     title: "Nasza Historia",
-    content: "Poznaliśmy się podczas studiów na Uniwersytecie Warszawskim. To była miłość od pierwszego wejrzenia. Po trzech latach związku, Marek oświadczył się Annie podczas romantycznego zachodu słońca nad Wisłą. Teraz nie możemy się doczekać, aby rozpocząć nowe życie razem!"
+    content: "Poznaliśmy się podczas wspólnych wakacji nad morzem. To była miłość od pierwszego wejrzenia. Po dwóch latach związku, Adam oświadczył się Natalii podczas romantycznego zachodu słońca. Teraz nie możemy się doczekać, aby rozpocząć nowe życie razem!"
   },
   schedule: [
     {
